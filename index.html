@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Operação de Delivery para Restaurantes em Osasco | Osasco Express</title>
-<meta name="description" content="Osasco Express: inteligência operacional para restaurantes, pizzarias, hamburguerias e pastelarias em Osasco que precisam estruturar delivery com escala, previsibilidade e controle.">
-<meta name="keywords" content="operação de delivery para restaurante, entregadores para restaurante em Osasco, equipe de entrega para restaurante, logística para delivery, gestão de delivery, escala de entregadores, delivery para pizzaria, delivery para hamburgueria, empresa de entrega para restaurante em Osasco">
+<title>Osasco Express | Operações de Entrega Recorrentes em Osasco</title>
+<meta name="description" content="Operações de entrega recorrentes em Osasco para restaurantes, lojas, e-commerces, contabilidades, escritórios, bancos, órgãos públicos e empresas que precisam de rotina, prazo e responsabilidade.">
+<meta name="keywords" content="empresa de entregas em Osasco, logística urbana para empresas, operação de entrega recorrente, motoboy por assinatura Osasco, entrega para restaurante, entrega para pizzaria, entrega para hamburgueria, entrega para e-commerce Osasco, entrega Mercado Livre Osasco, entrega Shopee Osasco, motoboy para contabilidade, entrega de documentos Osasco, rota empresarial, entrega institucional, terceirização de entregas Osasco">
 <meta name="robots" content="index,follow"><link rel="canonical" href="https://www.osascoexpress.com.br/">
-<meta property="og:title" content="Osasco Express — Operação de Delivery para Restaurantes em Osasco"><meta property="og:description" content="Estruturamos a operação de entrega de restaurantes, pizzarias e hamburguerias em Osasco com escala, previsibilidade e controle. Menos improviso, mais delivery."><meta property="og:type" content="website"><meta property="og:url" content="https://www.osascoexpress.com.br/"><meta name="theme-color" content="#EA1D2C">
+<meta property="og:title" content="Osasco Express — Operações de Entrega para Negócios Recorrentes"><meta property="og:description" content="Entregas recorrentes para negócios e instituições em Osasco: restaurantes, lojas, e-commerces, escritórios, bancos, órgãos públicos e empresas."><meta property="og:type" content="website"><meta property="og:url" content="https://www.osascoexpress.com.br/"><meta name="theme-color" content="#EA1D2C">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -195,8 +195,274 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
   .stepActions{display:grid;grid-template-columns:1fr}
 }
 
+
+/* === V5.1 — operações recorrentes por vertical === */
+.operationPicker{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:28px;
+}
+.operationCard{
+  background:linear-gradient(180deg,#fff,#FCFCFE);
+  border:1px solid rgba(13,19,35,.08);
+  border-radius:28px;
+  padding:22px;
+  box-shadow:0 12px 34px rgba(11,16,32,.07);
+  transition:.22s ease;
+  position:relative;
+  overflow:hidden;
+}
+.operationCard:hover{transform:translateY(-4px);box-shadow:0 22px 70px rgba(11,16,32,.11)}
+.operationCard::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,var(--red,#EA1D2C),#FF8A00)}
+.operationCard small{display:inline-flex;margin-bottom:10px;font-size:.72rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--red,#EA1D2C)}
+.operationCard h3{margin-bottom:8px}
+.operationCard p{font-size:.94rem}
+.contractNote{
+  margin-top:24px;
+  padding:20px;
+  border-radius:24px;
+  background:linear-gradient(135deg,#111827,#1B2435);
+  color:#fff;
+  box-shadow:0 18px 50px rgba(11,16,32,.14);
+}
+.contractNote p{color:rgba(255,255,255,.76)}
+.revenuePath{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:24px;
+}
+.revenueStep{
+  background:#fff;
+  border:1px solid rgba(13,19,35,.08);
+  border-radius:24px;
+  padding:20px;
+  box-shadow:0 10px 28px rgba(11,16,32,.06);
+}
+.revenueStep b{
+  width:34px;height:34px;border-radius:14px;
+  background:linear-gradient(135deg,var(--red,#EA1D2C),#B70F23);
+  color:#fff;display:grid;place-items:center;margin-bottom:12px;
+}
+@media(max-width:1120px){
+  .operationPicker{grid-template-columns:repeat(2,1fr)}
+  .revenuePath{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:720px){
+  .operationPicker,.revenuePath{grid-template-columns:1fr}
+}
+
+
+/* === VERSÃO FINAL — premium, responsiva e orientada a contrato === */
+:root{
+  --premium-blue:#111827;
+  --premium-gold:#F4B740;
+}
+.nav{min-width:0}
+.nav .wrap{min-width:0}
+.brand{white-space:nowrap}
+.navlinks{min-width:0}
+@media(max-width:1180px){.navlinks{display:none!important}.hamb{display:grid!important;place-items:center}}
+@media(max-height:780px) and (min-width:900px){
+  .hero{padding-top:46px!important;padding-bottom:24px!important}
+  .section{padding-top:68px!important;padding-bottom:68px!important}
+}
+.protectGrid,.worthGrid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:28px;
+}
+.protectCard,.worthCard{
+  background:linear-gradient(180deg,#fff,#FCFCFE);
+  border:1px solid rgba(13,19,35,.08);
+  border-radius:28px;
+  padding:22px;
+  box-shadow:0 12px 34px rgba(11,16,32,.07);
+  transition:.22s ease;
+}
+.protectCard:hover,.worthCard:hover{transform:translateY(-4px);box-shadow:0 22px 70px rgba(11,16,32,.11)}
+.protectCard small,.worthCard small{
+  display:inline-flex;
+  color:var(--red,#EA1D2C);
+  font-weight:900;
+  font-size:.72rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin-bottom:9px;
+}
+.premiumBand{
+  background:linear-gradient(135deg,#0E111A,#182033 58%,#211322);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.premiumBand:before{
+  content:"";
+  position:absolute;
+  right:-120px;
+  top:-120px;
+  width:380px;
+  height:380px;
+  border-radius:999px;
+  background:radial-gradient(circle,rgba(234,29,44,.18),transparent 70%);
+}
+.premiumBand h2,.premiumBand h3{color:#fff}
+.premiumBand p{color:rgba(255,255,255,.74)}
+.premiumProof{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:26px;
+  position:relative;
+}
+.premiumProof article{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:28px;
+  padding:24px;
+  backdrop-filter:blur(10px);
+}
+.premiumProof strong{
+  display:block;
+  font-size:1.05rem;
+  margin-bottom:8px;
+  color:#fff;
+}
+.finalTrustLine{
+  margin-top:22px;
+  padding:18px 20px;
+  border-radius:24px;
+  background:linear-gradient(135deg,#FFF7E8,#fff);
+  border:1px solid rgba(244,183,64,.32);
+  color:#6B4700;
+  font-weight:900;
+  line-height:1.45;
+}
+.reviewsSection{padding-top:76px!important;padding-bottom:76px!important}
+.elfsightWrap{
+  max-width:1080px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.elfsightWrap iframe,.elfsightWrap>div{max-width:100%!important}
+.toast{
+  max-width:310px!important;
+  right:24px!important;
+  bottom:28px!important;
+}
+@media(max-width:900px){.toast{display:none!important}}
+@media(max-width:980px){
+  .protectGrid,.worthGrid{grid-template-columns:repeat(2,1fr)}
+  .premiumProof{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .protectGrid,.worthGrid{grid-template-columns:1fr}
+  .protectCard,.worthCard{padding:20px}
+  .premiumProof article{padding:20px}
+  .reviewsSection{padding-top:58px!important;padding-bottom:58px!important}
+}
+
+
+/* === V5.2 MATRIZ — correção de rota e hero mais inteligente === */
+.heroText h1{
+  max-width:920px;
+  font-size:clamp(2.25rem,5.8vw,5rem)!important;
+  line-height:.98!important;
+  letter-spacing:-.06em!important;
+}
+.heroText .lead{
+  max-width:850px;
+}
+.segmentosServ{
+  max-width:900px;
+  line-height:1.65!important;
+}
+@media(max-width:720px){
+  .heroText h1{
+    font-size:clamp(2.15rem,12vw,3.9rem)!important;
+    line-height:1.02!important;
+    letter-spacing:-.055em!important;
+  }
+  .heroText .lead{
+    font-size:1.02rem!important;
+  }
+}
+@media(max-width:390px){
+  .heroText h1{
+    font-size:clamp(2rem,11vw,3.25rem)!important;
+  }
+}
+.matrixIntro{
+  margin-top:22px;
+  padding:18px 20px;
+  border-radius:24px;
+  border:1px solid rgba(13,19,35,.08);
+  background:linear-gradient(135deg,#fff,#FFF5F6);
+  box-shadow:0 10px 28px rgba(11,16,32,.06);
+}
+.matrixIntro strong{
+  color:var(--dark,#0A1020);
+}
+.matrixIntro p{
+  margin-top:6px;
+  color:var(--muted,#5B6577);
+}
+
+
+/* === V5.3 — Integração Sheets + Formulários Clientes/Entregadores === */
+.sheetStatus{
+  display:none;
+  margin-top:10px;
+  padding:10px 12px;
+  border-radius:14px;
+  font-size:.86rem;
+  font-weight:800;
+  line-height:1.45;
+}
+.sheetStatus.show{display:block}
+.sheetStatus.sending{background:#FFF7E6;border:1px solid rgba(243,182,61,.35);color:#704600}
+.sheetStatus.ok{background:#EAF8F1;border:1px solid rgba(20,131,77,.2);color:#11623B}
+.sheetStatus.fail{background:#FFF1F3;border:1px solid rgba(214,31,54,.18);color:#9E1B2F}
+.floatWhats{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:860;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:14px 18px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#16A34A,#12843D);
+  color:#fff;
+  font-weight:900;
+  box-shadow:0 18px 40px rgba(18,132,61,.28);
+  border:1px solid rgba(255,255,255,.22);
+  transition:.22s ease;
+}
+.floatWhats:hover{transform:translateY(-2px);box-shadow:0 24px 54px rgba(18,132,61,.34)}
+.floatWhats small{display:block;font-size:.72rem;font-weight:800;opacity:.82;line-height:1}
+.floatWhats span{display:block;line-height:1.05}
+.riderFormGrid{
+  display:grid;
+  gap:12px;
+}
+.riderChecks{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:8px;
+}
+@media(max-width:900px){
+  .floatWhats{display:none}
+}
+@media(max-width:720px){
+  .riderChecks{grid-template-columns:1fr}
+}
+
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "LocalBusiness", "@id": "https://www.osascoexpress.com.br/#localbusiness", "name": "Osasco Express", "description": "Empresa de entregas, motoboy e logística urbana em Osasco para restaurantes, delivery, marketplace, comércio local, empresas e entregadores parceiros.", "url": "https://www.osascoexpress.com.br/", "telephone": "+55 11 97033-4125", "sameAs": ["https://www.instagram.com/osascoexpressmotoboys/"], "areaServed": ["Osasco", "Presidente Altino", "Quitaúna", "Km 18", "Bela Vista", "Vila Yara", "Rochdale", "Padroeira", "Novo Osasco", "Jardim D'Abril", "Jaguaribe", "Santo Antônio", "Bussocaba"], "department": [{"@type": "Organization", "name": "Atendimento Comercial Osasco Express", "telephone": "+55 11 97033-4125"}, {"@type": "Organization", "name": "SAC Especializado Osasco Express", "telephone": "+55 11 98666-1784"}], "hasMap": "https://g.page/r/CZ_CoJtVD9_rEBM/review", "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "47"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "A Osasco Express atende restaurantes e delivery em Osasco?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. A Osasco Express estrutura entregas para restaurantes, pizzarias, hamburguerias, pastelarias, mercados e operações de delivery em Osasco e região."}}, {"@type": "Question", "name": "A Osasco Express atende vendedores de marketplace e e-commerce?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. A Osasco Express atende sellers, lojistas e operações online que precisam de coleta, entrega local, rotas e terceirização de entregas urbanas."}}, {"@type": "Question", "name": "Como um entregador pode se cadastrar?", "acceptedAnswer": {"@type": "Answer", "text": "O entregador pode preencher a ficha cadastral, baixar o app Android da Osasco Express e acessar a escala digital para confirmação de horários."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "LocalBusiness", "@id": "https://www.osascoexpress.com.br/#localbusiness", "name": "Osasco Express", "description": "Operações de entrega recorrentes em Osasco para negócios, comércios, empresas e instituições.", "url": "https://www.osascoexpress.com.br/", "telephone": "+55 11 97033-4125", "sameAs": ["https://www.instagram.com/osascoexpressmotoboys/"], "areaServed": ["Osasco", "Presidente Altino", "Quitaúna", "Km 18", "Bela Vista", "Vila Yara", "Rochdale", "Padroeira", "Novo Osasco", "Jardim D'Abril", "Jaguaribe", "Santo Antônio", "Bussocaba"], "department": [{"@type": "Organization", "name": "Atendimento Comercial Osasco Express", "telephone": "+55 11 97033-4125"}, {"@type": "Organization", "name": "SAC Especializado Osasco Express", "telephone": "+55 11 98666-1784"}], "hasMap": "https://g.page/r/CZ_CoJtVD9_rEBM/review", "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "47"}, "serviceType": ["Entregas recorrentes para empresas", "Rotas empresariais", "Entrega para comércio local", "Entrega para e-commerce e marketplace", "Entrega de documentos e malotes", "Operação para restaurantes e food service", "Entrega institucional", "Terceirização de entregas"]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "A Osasco Express atende restaurantes e entrega em Osasco?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. A Osasco Express estrutura entregas para restaurantes, pizzarias, hamburguerias, pastelarias, mercados e operações de entrega em Osasco e região."}}, {"@type": "Question", "name": "A Osasco Express atende vendedores de marketplace e e-commerce?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. A Osasco Express atende sellers, lojistas e operações online que precisam de coleta, entrega local, rotas e terceirização de entregas urbanas."}}, {"@type": "Question", "name": "Como um entregador pode se cadastrar?", "acceptedAnswer": {"@type": "Answer", "text": "O entregador pode preencher a ficha cadastral, baixar o app Android da Osasco Express e acessar a escala digital para confirmação de horários."}}]}]}</script>
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <meta name="author" content="Osasco Express">
 <meta name="geo.region" content="BR-SP">
@@ -209,11 +475,15 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
 <header class="hero" id="home">
   <div class="wrap heroGrid">
     <div class="heroText reveal">
-      <span class="badge">Operação de delivery para restaurantes em Osasco</span>
-      <h1>Seu restaurante tem demanda. Agora precisa de <span class="accent">operação que não quebre no pico.</span></h1>
-      <p class="lead">A Osasco Express estrutura a operação de delivery de restaurantes com demanda constante, criando escala, previsibilidade e controle para que o dono pare de depender do improviso.</p>
-      <div class="heroChips"><span class="chip">+300 mil entregas realizadas</span><span class="chip">4 anos de atuação local</span><span class="chip">Delivery, marketplace e empresas</span></div>
-      <div class="ctaRow"><button class="btn btnPrimary" onclick="openLeadPopup()">Diagnóstico gratuito para minha empresa</button><a class="btn btnGhost" href="#entregadores">Sou entregador parceiro</a></div>
+      <span class="badge">Operação de entregas recorrentes em Osasco</span>
+      <h1>Entregas recorrentes para negócios que não podem depender de <span class="accent">improviso.</span></h1>
+      <p class="lead">A Osasco Express estrutura operações de entrega para restaurantes, lojas, e-commerces, escritórios, contabilidades, bancos, órgãos públicos e empresas que precisam de rotina, prazo, escala e responsabilidade.</p><p class="sectionNote reveal">Mais que entrega: rotina operacional para negócios que precisam proteger prazo, reputação, documentos, vendas e relacionamento com clientes.</p>
+      <div class="matrixIntro reveal">
+        <strong>Restaurante, loja, e-commerce, escritório, banco ou órgão público: cada operação tem um risco diferente.</strong>
+        <p>A Osasco Express não vende uma corrida genérica. Ela organiza o tipo de entrega que seu negócio precisa para funcionar com mais controle.</p>
+      </div>
+      <div class="heroChips"><span class="chip">+300 mil entregas realizadas</span><span class="chip">4 anos de atuação local</span><span class="chip">Entrega, marketplace e empresas</span></div>
+      <div class="ctaRow"><button class="btn btnPrimary" onclick="openLeadPopup()">Análise gratuita para minha empresa</button><a class="btn btnGhost" href="#entregadores">Sou entregador parceiro</a></div>
     </div>
     <aside class="heroPanel reveal">
       <span class="badge">Osasco é o território</span>
@@ -225,32 +495,103 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
       <div class="panelList"><div class="panelItem"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M6 16V8a3 3 0 0 1 3-3h6"/></svg></span><div><strong>Do pedido à entrega</strong><p>A página mostra processo, não só serviço.</p></div></div></div>
     </aside>
   </div>
-  <div class="wrap proof reveal"><div class="proofGrid"><div class="proofCard"><b>+300 mil</b><span>entregas já realizadas</span></div><div class="proofCard"><b>4 anos</b><span>em Osasco e região</span></div><div class="proofCard"><b>5 frentes</b><span>delivery, seller, comércio, empresa e entregador</span></div><div class="proofCard"><b>1 canal</b><span>lead qualificado para o comercial</span></div></div></div>
+  <div class="wrap proof reveal"><div class="proofGrid"><div class="proofCard"><b>+300 mil</b><span>entregas já realizadas</span></div><div class="proofCard"><b>4 anos</b><span>em Osasco e região</span></div><div class="proofCard"><b>5 frentes</b><span>entrega, seller, comércio, empresa e entregador</span></div><div class="proofCard"><b>1 canal</b><span>lead qualificado para o comercial</span></div></div></div>
 </header>
 
-<section class="quickNav"><div class="wrap quickGrid reveal"><a class="quickCard" href="#delivery"><small>Restaurantes</small><strong>Organizar meu delivery</strong><p>Menos caos no pico.</p></a><a class="quickCard" href="#marketplace"><small>Marketplace</small><strong>Entregar minhas vendas online</strong><p>Shopee, Mercado Livre e e-commerce.</p></a><a class="quickCard" href="#empresas"><small>Empresas</small><strong>Enviar com responsabilidade</strong><p>Documentos, contratos e rotas.</p></a><a class="quickCard" href="#entregadores"><small>Entregadores</small><strong>Entrar para a operação</strong><p>Ficha, app e escala digital.</p></a></div></section>
+<section class="quickNav"><div class="wrap quickGrid reveal"><a class="quickCard" href="#entrega"><small>Restaurantes</small><strong>Organizar meu entrega</strong><p>Menos caos no pico.</p></a><a class="quickCard" href="#marketplace"><small>Marketplace</small><strong>Entregar minhas vendas online</strong><p>Shopee, Mercado Livre e e-commerce.</p></a><a class="quickCard" href="#empresas"><small>Empresas</small><strong>Enviar com responsabilidade</strong><p>Documentos, contratos e rotas.</p></a><a class="quickCard" href="#entregadores"><small>Entregadores</small><strong>Entrar para a operação</strong><p>Ficha, app e escala digital.</p></a></div></section>
 
-
-<section class="section" id="problema-delivery">
+<section class="section" id="operacoes">
   <div class="wrap">
     <div class="sectionHead reveal">
       <div>
-        <span class="badge">O que trava o delivery</span>
-        <h2>O problema do seu delivery não é falta de pedido. É falta de operação.</h2>
+        <span class="badge">Escolha sua operação</span>
+        <h2>Cada contrato nasce de uma necessidade diferente. O ponto em comum é ter responsabilidade.</h2>
       </div>
-      <p>Quando a entrega depende de improviso, o restaurante vende, mas a experiência quebra no caminho: atraso, reclamação, escala furada e gerente apagando incêndio.</p>
+      <p>A Osasco Express prioriza operações com recorrência, potencial de contrato e demanda real. Restaurante, loja, e-commerce, escritório, banco e instituição merecem linguagem própria.</p>
     </div>
-    <div class="problemGrid">
-      <article class="problemCard reveal"><div class="problemIcon">⚠</div><h3>Escala quebrada</h3><p>O movimento chega, mas a equipe de entrega não acompanha o pico.</p></article>
-      <article class="problemCard reveal"><div class="problemIcon">⏱</div><h3>Atraso e reclamação</h3><p>Pedido atrasado vira avaliação ruim, retrabalho e perda de confiança.</p></article>
-      <article class="problemCard reveal"><div class="problemIcon">🔥</div><h3>Gerente sobrecarregado</h3><p>Em vez de liderar o salão e a cozinha, o gerente vira bombeiro da entrega.</p></article>
-      <article class="problemCard reveal"><div class="problemIcon">R$</div><h3>Custo sem controle</h3><p>Sem rotina, a operação fica refém de urgência, improviso e decisões no susto.</p></article>
+    <div class="operationPicker">
+      <article class="operationCard reveal">
+        <small>Food service</small>
+        <h3>Restaurantes, pizzarias e hamburguerias</h3>
+        <p>Entrega, horários de pico, escala por turno, apoio recorrente e operação para dias de maior movimento.</p>
+      </article>
+      <article class="operationCard reveal">
+        <small>Comércio local</small>
+        <h3>Lojas e negócios de bairro</h3>
+        <p>Entrega por assinatura, pré-pago, sob demanda organizada e evolução para recorrência.</p>
+      </article>
+      <article class="operationCard reveal">
+        <small>Online</small>
+        <h3>E-commerce e marketplace</h3>
+        <p>Coleta, rota, Shopee, Mercado Livre, Instagram, loja própria e entregas programadas.</p>
+      </article>
+      <article class="operationCard reveal">
+        <small>Documentos</small>
+        <h3>Contabilidades e escritórios</h3>
+        <p>Contratos, malotes, protocolos, documentos e rotas recorrentes com responsabilidade.</p>
+      </article>
+      <article class="operationCard reveal">
+        <small>Institucional</small>
+        <h3>Bancos e órgãos públicos</h3>
+        <p>Entregas institucionais, rotas programadas, documentação sensível e atendimento com processo.</p>
+      </article>
+      <article class="operationCard reveal">
+        <small>Corporate</small>
+        <h3>Empresas e operações recorrentes</h3>
+        <p>Terceirização de entregas, rotas empresariais, contratos e análise de demanda.</p>
+      </article>
     </div>
-    <div class="premiumQuote reveal">Quem tem demanda constante não pode depender de sorte. Precisa de diagnóstico, escala e acompanhamento.</div>
+    <div class="contractNote reveal">
+      <h3 style="color:#fff">A prioridade é contrato bom, não corrida solta.</h3>
+      <p>Pré-pago pode ser porta de entrada. Mas o objetivo comercial é construir recorrência: mensalidade, turno, rota, assinatura e operação com previsibilidade.</p>
+    </div>
   </div>
 </section>
 
-<section class="storyBand"><div class="wrap storyGrid"><div class="reveal"><span class="badge">Storytelling da operação</span><h2>A etapa mais sensível do delivery acontece depois da venda.</h2><p>O cliente comprou, a cozinha produziu, o pedido saiu. Agora a operação precisa sustentar a promessa. É nessa etapa que a Osasco Express ajuda o restaurante a ganhar escala, previsibilidade e controle.</p></div><div class="motionFlow reveal"><div class="flowStep"><b>Venda</b><span>pedido ou demanda entra</span></div><div class="flowStep"><b>Acionamento</b><span>comercial entende cenário</span></div><div class="flowStep"><b>Operação</b><span>modelo certo é definido</span></div><div class="flowStep"><b>Entrega</b><span>rota ganha previsibilidade</span></div><div class="flowStep"><b>Confiança</b><span>cliente volta a comprar</span></div></div></div></section>
+
+
+
+<section class="section" id="protecao-operacional">
+  <div class="wrap">
+    <div class="sectionHead reveal">
+      <div>
+        <span class="badge">O que você protege</span>
+        <h2>Quem tem operação séria não contrata só deslocamento. Contrata segurança.</h2>
+      </div>
+      <p>O cliente com demanda recorrente não quer mais um problema para gerenciar. Ele quer uma etapa crítica funcionando com responsabilidade.</p>
+    </div>
+    <div class="protectGrid">
+      <article class="protectCard reveal"><small>Reputação</small><h3>Protege a experiência do cliente</h3><p>Atraso, reclamação e retrabalho custam mais caro do que parecem na taxa da entrega.</p></article>
+      <article class="protectCard reveal"><small>Tempo</small><h3>Libera sua equipe do improviso</h3><p>Menos tempo caçando entregador e mais tempo cuidando da venda, do atendimento e da operação.</p></article>
+      <article class="protectCard reveal"><small>Prazo</small><h3>Cuida de documentos e rotas sensíveis</h3><p>Contrato, malote, pedido, coleta ou entrega institucional precisam de processo e comunicação.</p></article>
+      <article class="protectCard reveal"><small>Controle</small><h3>Reduz custo invisível</h3><p>O barato da corrida solta pode aparecer como atraso, equipe parada, cliente insatisfeito e urgência mal resolvida.</p></article>
+      <article class="protectCard reveal"><small>Escala</small><h3>Acompanha o crescimento</h3><p>Não adianta vender mais se a entrega, a coleta ou a rota não acompanha o ritmo do negócio.</p></article>
+      <article class="protectCard reveal"><small>Recorrência</small><h3>Transforma entrega em rotina</h3><p>Uma boa operação não depende de sorte todo dia. Ela tem modelo, acompanhamento e previsibilidade.</p></article>
+    </div>
+    <div class="finalTrustLine reveal">A primeira entrega mostra capacidade. A recorrência mostra estrutura.</div>
+  </div>
+</section>
+
+<section class="section" id="problema-entrega">
+  <div class="wrap">
+    <div class="sectionHead reveal">
+      <div>
+        <span class="badge">O que trava o entrega</span>
+        <h2>O custo da entrega improvisada raramente aparece só na taxa. Ele aparece no atraso, no retrabalho, na equipe parada e na confiança perdida.</h2>
+      </div>
+      <p>Quando a entrega depende de improviso, qualquer operação perde controle: pedido atrasa, documento para, rota quebra, equipe se sobrecarrega e o cliente sente.</p>
+    </div>
+    <div class="problemGrid">
+      <article class="problemCard reveal"><div class="problemIcon">⚠</div><h3>Rotina quebrada</h3><p>A demanda aparece, mas a entrega não acompanha o ritmo do negócio.</p></article>
+      <article class="problemCard reveal"><div class="problemIcon">⏱</div><h3>Atraso e retrabalho</h3><p>Entrega atrasada vira reclamação, retrabalho e perda de confiança.</p></article>
+      <article class="problemCard reveal"><div class="problemIcon">🔥</div><h3>Time sobrecarregado</h3><p>Em vez de vender e atender melhor, a equipe passa a apagar incêndio logístico.</p></article>
+      <article class="problemCard reveal"><div class="problemIcon">R$</div><h3>Custo sem controle</h3><p>Sem rotina, a operação fica refém de urgência, improviso e decisões no susto.</p></article>
+    </div>
+    <div class="premiumQuote reveal">Quem tem demanda constante não pode depender de sorte. Precisa de análise, rotina e acompanhamento.</div>
+  </div>
+</section>
+
+<section class="storyBand"><div class="wrap storyGrid"><div class="reveal"><span class="badge">Storytelling da operação</span><h2>A etapa mais sensível da entrega acontece quando o compromisso precisa ser cumprido.</h2><p>A venda entrou, o documento precisa chegar, a coleta foi combinada ou a rota foi programada. Agora a operação precisa cumprir o compromisso. É nessa etapa que a Osasco Express ajuda o negócio a ganhar rotina, previsibilidade e controle.</p></div><div class="motionFlow reveal"><div class="flowStep"><b>Venda</b><span>pedido ou demanda entra</span></div><div class="flowStep"><b>Acionamento</b><span>comercial entende cenário</span></div><div class="flowStep"><b>Operação</b><span>modelo certo é definido</span></div><div class="flowStep"><b>Entrega</b><span>rota ganha previsibilidade</span></div><div class="flowStep"><b>Confiança</b><span>cliente volta a comprar</span></div></div></div></section>
 
 
 <section class="section" id="metodo-operacional" style="padding-top:54px">
@@ -258,29 +599,29 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
     <div class="reveal">
       <span class="badge">Como funciona</span>
       <h2>Não vendemos corrida. Estruturamos rotina.</h2>
-      <p class="lead">A Osasco Express entra como guia da operação: entende a demanda, organiza a escala, acompanha a rotina e ajusta o modelo conforme o movimento do restaurante.</p>
+      <p class="lead">A Osasco Express entra como guia da operação: entende a demanda, organiza o modelo de entrega, acompanha a rotina e ajusta a estrutura conforme o tipo de negócio.</p>
       <div class="timeline">
-        <div class="timelineItem"><b>1</b><div><strong>Diagnóstico operacional</strong><p>Entendemos pedidos por dia, horários de pico, dias fortes e gargalos atuais.</p></div></div>
+        <div class="timelineItem"><b>1</b><div><strong>Análise operacional</strong><p>Entendemos demanda diária, horários de pico, dias fortes e gargalos atuais.</p></div></div>
         <div class="timelineItem"><b>2</b><div><strong>Estruturação da escala</strong><p>Desenhamos o modelo de apoio: turno, recorrência, assinatura ou operação mensal.</p></div></div>
         <div class="timelineItem"><b>3</b><div><strong>Acompanhamento</strong><p>O foco é rotina: menos surpresa, mais previsibilidade e comunicação.</p></div></div>
       </div>
     </div>
     <aside class="diagnosisPanel reveal">
-      <h3>Diagnóstico antes da proposta</h3>
+      <h3>Análise antes da proposta</h3>
       <p>Preço sem entender operação vira chute. Por isso, a proposta começa com perguntas simples sobre demanda, pico e modelo atual.</p>
       <div class="diagnosisList">
-        <div>✓ média de pedidos por dia</div>
+        <div>✓ média de demanda diária</div>
         <div>✓ horário e dias de maior movimento</div>
         <div>✓ modelo atual de entregas</div>
         <div>✓ maior problema operacional</div>
       </div>
-      <div class="ctaRow"><button class="btn btnPrimary" onclick="openLeadPopup()">Receber diagnóstico inicial</button></div>
+      <div class="ctaRow"><button class="btn btnPrimary" onclick="openLeadPopup()">Receber análise inicial</button></div>
     </aside>
   </div>
 </section>
 
 <section class="section" id="servicos"><div class="wrap"><div class="sectionHead reveal"><div><span class="badge">Serviços</span><h2>Quatro caminhos claros. Menos botão. Mais decisão.</h2></div><p>Cada bloco tem uma intenção, um público e uma ação. O visitante não se perde: ele entende, confia e avança.</p></div><div class="serviceGrid">
-<article class="serviceCard reveal" id="delivery"><div class="topIcon icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16l-1-6H5l-1 6Z"/><path d="M6 10v10h12V10"/><path d="M9 20v-6h6v6"/></svg></div><h3>Restaurantes e delivery</h3><p>Quando o pedido atrasa, a experiência do cliente também quebra. A Osasco Express ajuda a organizar o pico.</p><ul><li>apoio por turno</li><li>pré-pago para começar</li><li>operação recorrente</li></ul><a class="btn btnPrimary" target="_blank" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20tenho%20um%20restaurante%20ou%20delivery%20e%20quero%20organizar%20minhas%20entregas%20com%20a%20Osasco%20Express.">Organizar meu delivery</a></article>
+<article class="serviceCard reveal" id="entrega"><div class="topIcon icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16l-1-6H5l-1 6Z"/><path d="M6 10v10h12V10"/><path d="M9 20v-6h6v6"/></svg></div><h3>Restaurantes e entrega</h3><p>Quando o pedido atrasa, a experiência do cliente também quebra. A Osasco Express ajuda a organizar o pico.</p><ul><li>apoio por turno</li><li>pré-pago para começar</li><li>operação recorrente</li></ul><a class="btn btnPrimary" target="_blank" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20tenho%20um%20restaurante%20ou%20entrega%20e%20quero%20organizar%20minhas%20entregas%20com%20a%20Osasco%20Express.">Organizar meu entrega</a></article>
 <article class="serviceCard reveal" id="marketplace"><div class="topIcon icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M6 16V8a3 3 0 0 1 3-3h6"/></svg></div><h3>Marketplace e e-commerce</h3><p>Você vende online. A entrega precisa acompanhar o ritmo da venda sem exigir frota própria.</p><ul><li>Shopee e Mercado Livre</li><li>loja online e Instagram</li><li>coleta, rota e entrega local</li></ul><button class="btn btnPrimary" onclick="openLeadPopup()">Estruturar entregas online</button></article>
 <article class="serviceCard reveal" id="comercio"><div class="topIcon icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6 3V6l6-3 6 3 6-3v15l-6 3-6-3Z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg></div><h3>Comércio local</h3><p>Sua loja não precisa contratar fixo para entregar melhor. Dá para começar com modelo sob demanda.</p><ul><li>motoboy sob demanda</li><li>assinatura</li><li>entregas agrupadas</li></ul><button class="btn btnPrimary" onclick="openLeadPopup()">Criar entrega para meu comércio</button></article>
 <article class="serviceCard reveal" id="empresas"><div class="topIcon icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v5c0 5-3.5 8.5-7 11-3.5-2.5-7-6-7-11V6l7-4z"/><path d="m9.5 12 1.7 1.7 3.8-3.8"/></svg></div><h3>Empresas e escritórios</h3><p>Documento, contrato e malote exigem prazo, comunicação e responsabilidade.</p><ul><li>contabilidades e advocacias</li><li>rotas empresariais</li><li>operação de alto ticket</li></ul><a class="btn btnPrimary" target="_blank" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20sou%20empresa%20e%20quero%20falar%20sobre%20entregas%20empresariais%20com%20a%20Osasco%20Express.">Falar sobre entrega empresarial</a></article>
@@ -292,7 +633,7 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
     <div class="sectionHead reveal">
       <div>
         <span class="badge">Avaliações reais</span>
-        <h2>O que dizem quem já usa a operação.</h2>
+        <h2>O que dizem quem já conhece nossa operação.</h2>
       </div>
       <a href="https://g.page/r/CZ_CoJtVD9_rEBM/review" target="_blank" rel="noopener" class="btn btnGhost">Avaliar no Google ↗</a>
     </div>
@@ -305,14 +646,33 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
 <section class="section dark"><div class="wrap"><div class="sectionHead reveal"><div><span class="badge">Sellers e lojas online</span><h2>Marketplace não precisa virar bagunça na porta da loja.</h2></div><p>Um bloco para capturar vendedores de Shopee, Mercado Livre, Instagram e e-commerce local que precisam de entrega urbana sem montar equipe própria.</p></div><div class="marketGrid"><article class="glass reveal"><h3>Mercado Livre</h3><p>Apoio local para vendedores que precisam de coleta, rota e entrega urbana em Osasco.</p></article><article class="glass reveal"><h3>Shopee</h3><p>Organização para quem vende online e precisa de retirada, despacho ou entrega local.</p></article><article class="glass reveal"><h3>Loja própria</h3><p>Para quem vende por WhatsApp, Instagram ou site e quer profissionalizar a entrega.</p></article></div></div></section>
 
 
+
+<section class="section premiumBand" id="quando-vale">
+  <div class="wrap">
+    <div class="sectionHead reveal">
+      <div>
+        <span class="badge">Quando vale contratar</span>
+        <h2>Existe uma hora em que entrega deixa de ser tarefa e vira operação.</h2>
+      </div>
+      <p>Esse é o ponto em que a Osasco Express faz mais sentido: quando o improviso começa a travar venda, prazo, reputação ou rotina.</p>
+    </div>
+    <div class="premiumProof">
+      <article class="reveal"><strong>Quando existe demanda toda semana.</strong><p>Restaurante, loja, e-commerce, escritório ou empresa que entrega com frequência precisa de previsibilidade, não de sorte.</p></article>
+      <article class="reveal"><strong>Quando atraso vira prejuízo real.</strong><p>Cliente reclama, documento para, equipe perde tempo e a operação paga uma conta que nem sempre aparece na planilha.</p></article>
+      <article class="reveal"><strong>Quando o time interno está sobrecarregado.</strong><p>Se a logística vira incêndio diário, o negócio deixa de focar no que realmente gera dinheiro.</p></article>
+      <article class="reveal"><strong>Quando o negócio quer crescer sem montar frota própria.</strong><p>Terceirizar entrega não é perder controle. É ganhar processo quando o parceiro é certo.</p></article>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="diferenciais">
   <div class="wrap">
     <div class="sectionHead reveal">
       <div>
         <span class="badge">Por que a Osasco Express</span>
-        <h2>A diferença entre corrida e operação.</h2>
+        <h2>A diferença entre resolver uma entrega e proteger uma operação.</h2>
       </div>
-      <p>Para restaurante com demanda constante, o problema não é encontrar alguém para uma entrega. É ter rotina que sustente o pico sem quebrar a experiência do cliente.</p>
+      <p>Para quem tem dinheiro investido no negócio, a entrega não pode ser um ponto fraco. Ela precisa sustentar volume, prazo, reputação e responsabilidade.</p>
     </div>
     <div class="diffGrid reveal">
       <div class="diffCol bad">
@@ -321,7 +681,7 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
         <div class="diffRow"><span class="diffMark">–</span><span>Escala no pico depende de disponibilidade de última hora.</span></div>
         <div class="diffRow"><span class="diffMark">–</span><span>Pouco acompanhamento da rotina e dos gargalos.</span></div>
         <div class="diffRow"><span class="diffMark">–</span><span>Custo tende a ficar imprevisível quando a operação aperta.</span></div>
-        <div class="diffRow"><span class="diffMark">–</span><span>A reputação do restaurante fica mais vulnerável ao atraso.</span></div>
+        <div class="diffRow"><span class="diffMark">–</span><span>A reputação do negócio fica mais vulnerável ao atraso.</span></div>
       </div>
       <div class="diffCol good">
         <h3>Operação estruturada</h3>
@@ -329,7 +689,7 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
         <div class="diffRow"><span class="diffMark">✓</span><span>Escala pensada para almoço, jantar, fim de semana e feriado.</span></div>
         <div class="diffRow"><span class="diffMark">✓</span><span>Acompanhamento comercial e leitura da operação.</span></div>
         <div class="diffRow"><span class="diffMark">✓</span><span>Modelo sob medida antes de falar em valores.</span></div>
-        <div class="diffRow"><span class="diffMark">✓</span><span>Mais controle sobre a etapa que acontece depois da venda.</span></div>
+        <div class="diffRow"><span class="diffMark">✓</span><span>Mais controle sobre a etapa que acontece depois da venda, do pedido ou da solicitação.</span></div>
       </div>
     </div>
   </div>
@@ -342,7 +702,7 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
     <div class="sectionHead reveal">
       <div>
         <span class="badge">Todos os serviços com rigor</span>
-        <h2>Delivery é a porta principal. As outras frentes também entram com método.</h2>
+        <h2>Entrega é a porta principal. As outras frentes também entram com método.</h2>
       </div>
       <p>O site não vira genérico: cada serviço aparece com papel claro dentro da operação da Osasco Express.</p>
     </div>
@@ -355,26 +715,51 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
   </div>
 </section>
 
-<section class="section mapSection" id="bairros"><div class="wrap mapGrid"><div class="reveal"><span class="badge">Mapa de atuação</span><h2>Delivery é local. E Osasco é o nosso território.</h2><p class="lead">Atuamos em bairros estratégicos para apoiar restaurantes, pizzarias, hamburguerias e operações food service que precisam de escala e previsibilidade.</p><div class="coverageList">Centro<br>Presidente Altino<br>Quitaúna<br>Km 18<br>Bela Vista<br>Vila Yara<br>Rochdale<br>Padroeira<br>Novo Osasco<br>Jardim D’Abril<br>Santo Antônio<br>Jaguaribe<br>Helena Maria<br>Munhoz Júnior<br>Jardim Veloso<br>Cipava<br>Bussocaba<br>Vila Menck</div><div class="ctaRow"><button class="btn btnGhost" onclick="openLeadPopup()">Ver se atendemos meu bairro</button></div></div><div class="cityMap reveal"><svg class="routeLine" viewBox="0 0 600 420" preserveAspectRatio="none"><path d="M95 85 C180 40, 260 130, 340 90 S520 90, 500 190 S390 255, 305 235 S145 280, 120 185 S180 110, 250 150" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="4" stroke-dasharray="10 10"/><path d="M120 330 C210 285, 255 350, 355 320 S480 260, 520 310" fill="none" stroke="rgba(255,255,255,.13)" stroke-width="3" stroke-dasharray="7 9"/></svg><div class="mapPin"><i></i><span>Centro</span></div><div class="mapPin"><i></i><span>Km 18</span></div><div class="mapPin"><i></i><span>Vila Yara</span></div><div class="mapPin"><i></i><span>Quitaúna</span></div><div class="mapPin"><i></i><span>Rochdale</span></div><div class="mapPin"><i></i><span>Padroeira</span></div><div class="mapPin"><i></i><span>Novo Osasco</span></div><div class="mapPin"><i></i><span>Jaguaribe</span></div><div class="mapLegend"><strong>Mapa gráfico de cobertura</strong><p>Representação visual para destacar presença local em bairros estratégicos de Osasco.</p></div></div></div></section>
+<section class="section mapSection" id="bairros"><div class="wrap mapGrid"><div class="reveal"><span class="badge">Mapa de atuação</span><h2>Entrega é local. E Osasco é o nosso território.</h2><p class="lead">Atuamos em bairros estratégicos para apoiar restaurantes, pizzarias, hamburguerias e operações food service que precisam de escala e previsibilidade.</p><div class="coverageList">Centro<br>Presidente Altino<br>Quitaúna<br>Km 18<br>Bela Vista<br>Vila Yara<br>Rochdale<br>Padroeira<br>Novo Osasco<br>Jardim D’Abril<br>Santo Antônio<br>Jaguaribe<br>Helena Maria<br>Munhoz Júnior<br>Jardim Veloso<br>Cipava<br>Bussocaba<br>Vila Menck</div><div class="ctaRow"><button class="btn btnGhost" onclick="openLeadPopup()">Ver se atendemos meu bairro</button></div></div><div class="cityMap reveal"><svg class="routeLine" viewBox="0 0 600 420" preserveAspectRatio="none"><path d="M95 85 C180 40, 260 130, 340 90 S520 90, 500 190 S390 255, 305 235 S145 280, 120 185 S180 110, 250 150" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="4" stroke-dasharray="10 10"/><path d="M120 330 C210 285, 255 350, 355 320 S480 260, 520 310" fill="none" stroke="rgba(255,255,255,.13)" stroke-width="3" stroke-dasharray="7 9"/></svg><div class="mapPin"><i></i><span>Centro</span></div><div class="mapPin"><i></i><span>Km 18</span></div><div class="mapPin"><i></i><span>Vila Yara</span></div><div class="mapPin"><i></i><span>Quitaúna</span></div><div class="mapPin"><i></i><span>Rochdale</span></div><div class="mapPin"><i></i><span>Padroeira</span></div><div class="mapPin"><i></i><span>Novo Osasco</span></div><div class="mapPin"><i></i><span>Jaguaribe</span></div><div class="mapLegend"><strong>Mapa gráfico de cobertura</strong><p>Representação visual para destacar presença local em bairros estratégicos de Osasco.</p></div></div></div></section>
 
 
 
-<section class="section"><div class="wrap"><div class="sectionHead reveal"><div><span class="badge">FAQ</span><h2>Perguntas que ajudam o visitante a decidir.</h2></div><p>Menos dúvida, mais confiança, mais caminho para o comercial.</p></div><div class="faqGrid"><div class="faqItem reveal"><div class="faqQ"><span>A Osasco Express atende restaurantes com demanda recorrente?</span><span>⌄</span></div><div class="faqA"><div><p>Sim. O foco principal são restaurantes, pizzarias, hamburguerias, pastelarias e operações food service com demanda constante em Osasco e região.</p></div></div></div><div class="faqItem reveal"><div class="faqQ"><span>Vocês trabalham com operações mensalistas?</span><span>⌄</span></div><div class="faqA"><div><p>Sim. A prioridade comercial são operações recorrentes, por turno, por assinatura ou mensalistas. O pré-pago pode entrar como porta de entrada.</p></div></div></div><div class="faqItem reveal"><div class="faqQ"><span>Como saber quantos entregadores minha operação precisa?</span><span>⌄</span></div><div class="faqA"><div><p>Isso depende de volume, horários de pico, raio, dias de maior movimento e modelo atual. Por isso a proposta começa pelo diagnóstico operacional.</p></div></div></div><div class="faqItem reveal"><div class="faqQ"><span>Qual a diferença entre corrida solta e operação estruturada?</span><span>⌄</span></div><div class="faqA"><div><p>Corrida solta resolve urgência. Operação estruturada cria rotina, escala, previsibilidade e acompanhamento para quem tem demanda constante.</p></div></div></div></div></div></section>
+<section class="section"><div class="wrap"><div class="sectionHead reveal"><div><span class="badge">FAQ</span><h2>Perguntas que ajudam o visitante a decidir.</h2></div><p>Menos dúvida, mais confiança, mais caminho para o comercial.</p></div><div class="faqGrid"><div class="faqItem reveal"><div class="faqQ"><span>A Osasco Express atende restaurantes com demanda recorrente?</span><span>⌄</span></div><div class="faqA"><div><p>Sim. O foco principal são restaurantes, pizzarias, hamburguerias, pastelarias e operações food service com demanda constante em Osasco e região.</p></div></div></div><div class="faqItem reveal"><div class="faqQ"><span>Vocês trabalham com operações mensalistas?</span><span>⌄</span></div><div class="faqA"><div><p>Sim. A prioridade comercial são operações recorrentes, por turno, por assinatura ou mensalistas. O pré-pago pode entrar como porta de entrada.</p></div></div></div><div class="faqItem reveal"><div class="faqQ"><span>Como saber quantos entregadores minha operação precisa?</span><span>⌄</span></div><div class="faqA"><div><p>Isso depende de volume, horários de pico, raio, dias de maior movimento e modelo atual. Por isso a proposta começa pelo análise operacional.</p></div></div></div><div class="faqItem reveal"><div class="faqQ"><span>Qual a diferença entre corrida solta e operação estruturada?</span><span>⌄</span></div><div class="faqA"><div><p>Corrida solta resolve urgência. Operação estruturada cria rotina, escala, previsibilidade e acompanhamento para quem tem demanda constante.</p></div></div></div></div></div></section>
 
-<section class="section" id="entregadores"><div class="wrap riderGrid"><div class="reveal"><span class="badge">Entregadores parceiros</span><h2>Entregador bom não quer bagunça. Quer oportunidade com regra clara.</h2><p class="lead">Na Osasco Express, quem confirma, cumpre e se comunica ganha espaço. Quem some, atrasa e não respeita o time perde prioridade.</p><div class="ctaRow"><a class="btn btnPrimary" target="_blank" href="https://forms.gle/DSxcYPEf5qFSbHjU8">Fazer ficha cadastral</a><a class="btn btnGhost" target="_blank" href="https://play.google.com/store/apps/details?id=com.osascoexpress&pcampaignid=web_share">Baixar app</a></div></div><aside class="riderCard reveal"><h3>Trilha do parceiro</h3><p>Cadastro, app, escala digital e confirmação de horário.</p><div class="actionGrid"><a target="_blank" href="https://forms.gle/DSxcYPEf5qFSbHjU8">1. Preencher ficha cadastral</a><a target="_blank" href="https://play.google.com/store/apps/details?id=com.osascoexpress&pcampaignid=web_share">2. Baixar app Android</a><a target="_blank" href="https://osascoexpressoficial-debug.github.io/confirmadosdasemana/">3. Acessar escala digital</a><a target="_blank" href="https://wa.me/5511924782555?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20sobre%20cadastro%20de%20entregador.">4. Falar com atendimento</a></div></aside></div></section>
-<section class="section ctaSection"><div class="wrap ctaGrid"><div class="reveal"><span class="badge">Próximo passo</span><h2>Transforme entrega em parte da sua operação.</h2><p class="lead">Responda um briefing rápido e fale com o comercial. Valores são passados após análise do cenário para evitar proposta errada.</p><div class="ctaRow"><button class="btn btnPrimary" onclick="openLeadPopup()">Diagnóstico gratuito completa</button><a class="btn btnGhost" target="_blank" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20quero%20falar%20com%20o%20comercial%20da%20Osasco%20Express.">WhatsApp comercial</a></div></div><aside class="contactCard reveal"><h3>Canais oficiais</h3><a target="_blank" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20com%20o%20comercial."><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.96 8.96 0 0 1-1.02 4.18L21 21l-4.95-1.02A9 9 0 1 1 21 12Z"/><path d="M8.8 10.4h6.4"/><path d="M8.8 13.6h4.2"/></svg></span><div><small>Comercial</small>(11) 97033-4125</div></a><a target="_blank" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20preciso%20de%20atendimento%20especializado%20da%20Osasco%20Express."><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v2a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.8 19.8 0 0 1 2.08 4.1 2 2 0 0 1 4.07 2h2a2 2 0 0 1 2 1.72c.12.9.32 1.78.6 2.63a2 2 0 0 1-.45 2.11L7.1 9.6a16 16 0 0 0 7.3 7.3l1.14-1.12a2 2 0 0 1 2.11-.45c.85.28 1.73.48 2.63.6A2 2 0 0 1 22 16.92Z"/></svg></span><div><small>SAC especializado</small>(11) 98666-1784</div></a><a target="_blank" href="https://wa.me/5511924782555?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20sobre%20cadastro%20de%20entregador."><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M10 17.5h5"/><path d="M5 17.5H4a1 1 0 0 1-1-1v-3l2.2-4.4A2 2 0 0 1 7 8h5.5a2 2 0 0 1 1.7.95L16 12h2.2a1.8 1.8 0 0 1 1.6 1l1.2 2.4v1.1a1 1 0 0 1-1 1h-.5"/></svg></span><div><small>Entregadores</small>Atendimento de cadastro</div></a></aside></div></section>
+<section class="section" id="entregadores"><div class="wrap riderGrid"><div class="reveal"><span class="badge">Entregadores parceiros</span><h2>Entregador bom não quer bagunça. Quer oportunidade com regra clara.</h2><p class="lead">Na Osasco Express, quem confirma, cumpre e se comunica ganha espaço. Quem some, atrasa e não respeita o time perde prioridade.</p><div class="ctaRow"><button class="btn btnPrimary" type="button" onclick="openRiderModal()">Fazer cadastro de entregador</button><a class="btn btnGhost" target="_blank" href="https://play.google.com/store/apps/details?id=com.osascoexpress&pcampaignid=web_share">Baixar app</a></div></div><aside class="riderCard reveal"><h3>Trilha do parceiro</h3><p>Cadastro, app, escala digital e confirmação de horário.</p><div class="actionGrid"><a href="javascript:void(0)" onclick="openRiderModal()">1. Fazer cadastro pelo site</a><a target="_blank" href="https://play.google.com/store/apps/details?id=com.osascoexpress&pcampaignid=web_share">2. Baixar app Android</a><a target="_blank" href="https://osascoexpressoficial-debug.github.io/confirmadosdasemana/">3. Acessar escala digital</a><a target="_blank" href="https://wa.me/5511924782555?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20sobre%20cadastro%20de%20entregador.">4. Falar com atendimento</a></div></aside></div></section>
+
+<section class="section" id="caminho-contrato" style="padding-top:42px">
+  <div class="wrap">
+    <div class="sectionHead reveal">
+      <div>
+        <span class="badge">Caminho comercial</span>
+        <h2>Da primeira conversa ao contrato recorrente.</h2>
+      </div>
+      <p>O site existe para trazer lead qualificado. O comercial transforma o análise em modelo de operação com dinheiro na mesa.</p>
+    </div>
+    <div class="revenuePath">
+      <div class="revenueStep reveal"><b>1</b><h3>Análise</h3><p>Entendemos tipo de negócio, volume, frequência e gargalo.</p></div>
+      <div class="revenueStep reveal"><b>2</b><h3>Modelo</h3><p>Definimos se faz sentido pré-pago, turno, assinatura, rota ou mensal.</p></div>
+      <div class="revenueStep reveal"><b>3</b><h3>Proposta</h3><p>O comercial apresenta valores depois de entender o cenário.</p></div>
+      <div class="revenueStep reveal"><b>4</b><h3>Recorrência</h3><p>O objetivo é construir contrato, rotina e previsibilidade.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section ctaSection"><div class="wrap ctaGrid"><div class="reveal"><span class="badge">Próximo passo</span><h2>Transforme entrega em parte da sua operação.</h2><p class="lead">Responda um briefing rápido e fale com o comercial. Valores são passados após análise do cenário para evitar proposta errada.</p><div class="ctaRow"><button class="btn btnPrimary" onclick="openLeadPopup()">Análise gratuita completa</button><a class="btn btnGhost" target="_blank" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20quero%20falar%20com%20o%20comercial%20da%20Osasco%20Express.">WhatsApp comercial</a></div></div><aside class="contactCard reveal"><h3>Canais oficiais</h3><a target="_blank" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20com%20o%20comercial."><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.96 8.96 0 0 1-1.02 4.18L21 21l-4.95-1.02A9 9 0 1 1 21 12Z"/><path d="M8.8 10.4h6.4"/><path d="M8.8 13.6h4.2"/></svg></span><div><small>Comercial</small>(11) 97033-4125</div></a><a target="_blank" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20preciso%20de%20atendimento%20especializado%20da%20Osasco%20Express."><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v2a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5.15 12.8 19.8 19.8 0 0 1 2.08 4.1 2 2 0 0 1 4.07 2h2a2 2 0 0 1 2 1.72c.12.9.32 1.78.6 2.63a2 2 0 0 1-.45 2.11L7.1 9.6a16 16 0 0 0 7.3 7.3l1.14-1.12a2 2 0 0 1 2.11-.45c.85.28 1.73.48 2.63.6A2 2 0 0 1 22 16.92Z"/></svg></span><div><small>SAC especializado</small>(11) 98666-1784</div></a><a target="_blank" href="https://wa.me/5511924782555?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20sobre%20cadastro%20de%20entregador."><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M10 17.5h5"/><path d="M5 17.5H4a1 1 0 0 1-1-1v-3l2.2-4.4A2 2 0 0 1 7 8h5.5a2 2 0 0 1 1.7.95L16 12h2.2a1.8 1.8 0 0 1 1.6 1l1.2 2.4v1.1a1 1 0 0 1-1 1h-.5"/></svg></span><div><small>Entregadores</small>Atendimento de cadastro</div></a></aside></div></section>
 
 <footer class="footer"><div class="wrap footerGrid"><div><strong>Osasco Express</strong><br>Motoboy, entregas e gestão de logística urbana em Osasco.<div class="socials"><a target="_blank" href="https://www.instagram.com/osascoexpressmotoboys/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg> @osascoexpressmotoboys</a></div></div><a class="adminLink" href="comercial.html">Área Comercial</a></div></footer>
-<div class="bottomBar"><div class="grid"><a target="_blank" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20com%20o%20comercial.">📋 Quero proposta</a><a href="#entregadores">🛵 Sou entregador</a></div></div>
-<div class="toast" id="toastLead"><button class="x" onclick="hideToast()">×</button><strong>Tem restaurante com delivery travado?</strong><p>Responda o briefing e envie tudo organizado para o comercial.</p><button class="btn btnPrimary" onclick="openLeadPopup()">Diagnóstico gratuito</button></div>
+
+<a class="floatWhats" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Osasco%20Express%20e%20quero%20analisar%20uma%20opera%C3%A7%C3%A3o%20de%20entrega." target="_blank" rel="noopener" aria-label="Falar com o comercial pelo WhatsApp">
+  <span>WhatsApp</span>
+  <small>comercial</small>
+</a>
+
+<div class="bottomBar"><div class="grid"><a target="_blank" href="https://wa.me/5511970334125?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20com%20o%20comercial.">📋 Analisar operação</a><a href="#entregadores">🛵 Sou entregador</a></div></div>
+<div class="toast" id="toastLead"><button class="x" onclick="hideToast()">×</button><strong>Sua entrega está travando a operação?</strong><p>Responda o briefing e envie tudo organizado para o comercial.</p><button class="btn btnPrimary" onclick="openLeadPopup()">Análise gratuita</button></div>
 
 <div class="modal" id="leadModal"><div class="modalBox"><div class="modalHead"><h3>Monte sua proposta com a Osasco Express</h3><button class="closeBtn" onclick="closeLeadPopup()">Fechar</button></div><div class="modalBody">
 
 <div class="softBox">
-  <strong>Diagnóstico operacional do delivery</strong>
+  <strong>Análise da operação de entrega</strong>
   <p class="micro">Responda em menos de 1 minuto. Nosso comercial avalia se sua operação combina mais com pré-pago, assinatura, turno, rota recorrente ou contrato mensal.</p>
 </div>
-<div class="stepProgress" aria-label="Progresso do diagnóstico">
+<div class="stepProgress" aria-label="Progresso do análise">
   <span class="stepDot active" data-step-dot="1"></span>
   <span class="stepDot" data-step-dot="2"></span>
   <span class="stepDot" data-step-dot="3"></span>
@@ -397,8 +782,8 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
       <div class="fieldError"></div>
     </div>
     <div class="fieldGroup" data-field="leadEmpresa">
-      <label for="leadEmpresa">Nome do estabelecimento *</label>
-      <input id="leadEmpresa" required type="text" placeholder="Nome do restaurante, pizzaria, lanchonete...">
+      <label for="leadEmpresa">Nome do negócio ou instituição *</label>
+      <input id="leadEmpresa" required type="text" placeholder="Nome da empresa, loja, restaurante, escritório ou instituição...">
       <div class="fieldError"></div>
     </div>
     <div class="stepActions"><button class="btn btnPrimary" type="button" onclick="nextStep()">Próximo</button></div>
@@ -409,14 +794,13 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
       <label for="leadTipo">Tipo de estabelecimento *</label>
       <select id="leadTipo" required onchange="toggleOtherFields()">
         <option value="">Selecione</option>
-        <option>🍕 Pizzaria</option>
-        <option>🍔 Hamburgueria</option>
-        <option>🥟 Pastelaria</option>
-        <option>🍽️ Restaurante / Prato Feito</option>
-        <option>🛒 Mercado / Mercearia</option>
-        <option>📦 Marketplace (Shopee, ML...)</option>
-        <option>🏪 Comércio local</option>
-        <option>🏢 Empresa / Escritório</option>
+        <option>🍽️ Restaurante / pizzaria / hamburgueria</option>
+        <option>🏪 Loja / comércio local</option>
+        <option>📦 E-commerce / marketplace / seller</option>
+        <option>📄 Contabilidade / escritório</option>
+        <option>🏦 Banco / instituição financeira</option>
+        <option>🏛️ Órgão público / instituição</option>
+        <option>🏢 Empresa / corporate</option>
         <option>❓ Outro</option>
       </select>
       <div class="fieldError"></div>
@@ -427,38 +811,38 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
       <div class="fieldError"></div>
     </div>
     <div class="fieldGroup" data-field="leadVolume">
-      <label for="leadVolume">Média de pedidos por dia *</label>
+      <label for="leadVolume">Média de demanda diária *</label>
       <select id="leadVolume" required>
         <option value="">Selecione</option>
-        <option>Até 20 pedidos</option>
-        <option>21 a 50 pedidos</option>
-        <option>51 a 100 pedidos</option>
-        <option>Mais de 100 pedidos</option>
-        <option>Ainda não sei medir</option>
+        <option>Baixo volume / uso pontual</option>
+        <option>Volume médio recorrente</option>
+        <option>Alto volume recorrente</option>
+        <option>Operação intensa</option>
+        <option>Ainda preciso medir</option>
       </select>
       <div class="fieldError"></div>
     </div>
     <div class="fieldGroup" data-field="leadPicos">
-      <label>Horário de maior movimento *</label>
+      <label>Quando a entrega é mais crítica *</label>
       <div class="checkGrid" id="leadPicos">
-        <label class="checkOption"><input type="checkbox" value="☀️ Almoço (11h–14h)"><span>☀️ Almoço (11h–14h)</span></label>
-        <label class="checkOption"><input type="checkbox" value="🌆 Jantar (18h–22h)"><span>🌆 Jantar (18h–22h)</span></label>
-        <label class="checkOption"><input type="checkbox" value="🌙 Madrugada (22h–02h)"><span>🌙 Madrugada (22h–02h)</span></label>
-        <label class="checkOption"><input type="checkbox" value="📅 Fins de semana e feriados"><span>📅 Fins de semana e feriados</span></label>
+        <label class="checkOption"><input type="checkbox" value="☀️ Almoço / manhã"><span>☀️ Almoço / manhã</span></label>
+        <label class="checkOption"><input type="checkbox" value="🌆 Tarde / jantar"><span>🌆 Tarde / jantar</span></label>
+        <label class="checkOption"><input type="checkbox" value="🌙 Noite / madrugada"><span>🌙 Noite / madrugada</span></label>
+        <label class="checkOption"><input type="checkbox" value="📅 Fins de semana / feriados"><span>📅 Fins de semana / feriados</span></label>
         <label class="checkOption"><input type="checkbox" value="🔄 Varia muito"><span>🔄 Varia muito</span></label>
       </div>
       <div class="fieldError"></div>
     </div>
     <div class="fieldGroup" data-field="leadModelo">
-      <label for="leadModelo">Modelo atual de entrega *</label>
+      <label for="leadModelo">Como sua entrega funciona hoje *</label>
       <select id="leadModelo" required>
         <option value="">Selecione</option>
-        <option>Tenho entregadores próprios (CLT ou PJ)</option>
+        <option>Tenho equipe própria</option>
         <option>Uso freelancers / avulsos</option>
-        <option>Uso aplicativo (iFood, Rappi...)</option>
+        <option>Uso aplicativos ou plataformas</option>
         <option>Terceirizo tudo com outra empresa</option>
         <option>Quero estruturar do zero</option>
-        <option>Tenho recorrente mas quero melhorar</option>
+        <option>Já tenho recorrência, mas quero melhorar</option>
       </select>
       <div class="fieldError"></div>
     </div>
@@ -475,7 +859,7 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
         <option>💸 Custo alto sem controle</option>
         <option>😡 Reclamações de cliente</option>
         <option>📊 Falta de previsibilidade</option>
-        <option>🔥 Gerente sobrecarregado com logística</option>
+        <option>🔥 Time sobrecarregado com logística</option>
         <option>🚀 Quero escalar mas a entrega trava</option>
         <option>📝 Outra situação</option>
       </select>
@@ -511,19 +895,20 @@ button[disabled]{opacity:.55;cursor:not-allowed;transform:none!important}
       <div class="charCounter"><span id="obsCount">0</span>/500</div>
       <div class="fieldError"></div>
     </div>
-    <div class="stepActions"><button class="btn btnBack" type="button" onclick="prevStep()">Voltar</button><button class="btn btnPrimary" type="button" id="submitDiagnosis" onclick="prepareProposal(event)">Analisar meu cenário</button></div>
+    <div class="stepActions"><button class="btn btnBack" type="button" onclick="prevStep()">Voltar</button><button class="btn btnPrimary" type="button" id="submitDiagnosis" onclick="prepareProposal(event)">Receber análise inicial</button></div>
   </div>
 </form>
+<div id="clientSheetStatus" class="sheetStatus"></div>
 <div class="valueAnchor reveal">
   <p class="micro">💡 Operações mensalistas a partir de um modelo sob medida — sem tabela genérica, sem surpresa. O comercial apresenta valores após entender seu cenário.</p>
 </div>
 <div class="nextBox" id="proposalNext">
-  <div class="okTag">Diagnóstico pronto</div>
+  <div class="okTag">Análise pronta</div>
   <h3>Agora temos o ponto de partida para entender sua operação.</h3>
-  <p>Com essas informações, nosso comercial consegue avaliar escala, horários críticos e modelo ideal para estruturar seu delivery.</p>
+  <p>Com essas informações, nosso comercial consegue avaliar escala, horários críticos e modelo ideal para estruturar sua operação de entrega.</p>
   <p class="summary" id="proposalSummary"></p>
   <div class="ctaRow">
-    <a class="btn btnPrimary" id="proposalWhatsapp" target="_blank" rel="noopener" href="#">Enviar diagnóstico pelo WhatsApp</a>
+    <a class="btn btnPrimary" id="proposalWhatsapp" target="_blank" rel="noopener" href="#">Enviar análise para o comercial</a>
     <a class="btn btnGhost" target="_blank" rel="noopener" href="https://wa.me/5511986661784?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20especializado%20da%20Osasco%20Express.">Atendimento especializado</a>
   </div>
 </div>
@@ -553,6 +938,7 @@ function prepareProposal(e){
  document.getElementById('proposalSummary').textContent=`Resumo: ${perfil} • ${servico} • ${bairro} • ${freq}.`;
  document.getElementById('proposalForm').style.display='none';
  document.getElementById('proposalNext').classList.add('show');
+  oeTrack('submit_analise_whatsapp', {segmento: tipo, frequencia: v('leadFrequencia')});
 }
 
 
@@ -662,7 +1048,7 @@ function prepareProposal(e){
   const tipo = v('leadTipo').includes('Outro') ? v('leadTipoOutro') : v('leadTipo');
   const problema = v('leadProblema').includes('Outra') ? v('leadProblemaOutro') : v('leadProblema');
   const picos = checkedValues('leadPicos').join(', ');
-  const msg = `Olá, vim pelo site da Osasco Express e quero solicitar uma proposta.\n\n📋 *IDENTIFICAÇÃO*\nNome: ${v('leadNome')}\nEstabelecimento: ${v('leadEmpresa')}\nWhatsApp: ${v('leadWhats')}\nE-mail: ${email}\n\n🏪 *OPERAÇÃO*\nTipo: ${tipo}\nPedidos/dia: ${v('leadVolume')}\nPico: ${picos}\nModelo atual: ${v('leadModelo')}\n\n⚠️ *PROBLEMA PRINCIPAL*\n${problema}\n${v('leadObs') ? 'Observações: ' + v('leadObs') : ''}\n\n📍 *LOCAL*\nBairro/Cidade: ${v('leadBairro')}\nFrequência desejada: ${v('leadFrequencia')}`;
+  const msg = `Olá, vim pelo site da Osasco Express e quero solicitar uma proposta.\n\n📋 *IDENTIFICAÇÃO*\nNome: ${v('leadNome')}\nEstabelecimento: ${v('leadEmpresa')}\nWhatsApp: ${v('leadWhats')}\nE-mail: ${email}\n\n🏪 *OPERAÇÃO*\nTipo: ${tipo}\nVolume: ${v('leadVolume')}\nPeríodo crítico: ${picos}\nModelo atual: ${v('leadModelo')}\n\n⚠️ *PROBLEMA PRINCIPAL*\n${problema}\n${v('leadObs') ? 'Observações: ' + v('leadObs') : ''}\n\n📍 *LOCAL*\nBairro/Cidade: ${v('leadBairro')}\nFrequência desejada: ${v('leadFrequencia')}`;
   const link = `https://wa.me/5511970334125?text=${encodeURIComponent(msg)}`;
   document.getElementById('proposalWhatsapp').href = link;
   document.getElementById('proposalSummary').textContent = `Resumo: ${tipo} • ${v('leadVolume')} • ${v('leadBairro')} • ${v('leadFrequencia')}.`;
@@ -688,5 +1074,405 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.addEventListener('mouseleave',e=>{ if(e.clientY<8&&!oeLeadSeen&&innerWidth>760) openLeadPopup(); });
 });
 
+
+
+/* === Eventos profissionais para GA4/GTM quando instalado === */
+window.dataLayer = window.dataLayer || [];
+function oeTrack(eventName, params) {
+  try {
+    window.dataLayer.push(Object.assign({event:eventName}, params || {}));
+    if (typeof gtag === 'function') gtag('event', eventName, params || {});
+  } catch(e) {}
+}
+document.addEventListener('click', function(e){
+  const a = e.target.closest('a,button');
+  if(!a) return;
+  const text = (a.textContent || '').trim().slice(0,80);
+  const href = a.getAttribute('href') || '';
+  if(href.includes('wa.me/5511970334125')) oeTrack('click_whatsapp_comercial', {text:text});
+  if(href.includes('wa.me/5511924782555')) oeTrack('click_whatsapp_entregador', {text:text});
+  if(href.includes('forms.gle')) oeTrack('click_ficha_entregador', {text:text});
+  if(href.includes('play.google.com')) oeTrack('click_app_android', {text:text});
+  if(href.includes('confirmadosdasemana')) oeTrack('click_escala_digital', {text:text});
+  if(href.includes('g.page')) oeTrack('click_google_reviews', {text:text});
+  if(text.toLowerCase().includes('análise') || text.toLowerCase().includes('operação')) oeTrack('click_cta_operacao', {text:text});
+});
+
+
+
+/* === V5.3 — Google Sheets destino dos formulários === */
+const SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycby1f0lm7VcHIy0TbmNkNWaON1DtPOmXnERP4Nlif5o8JA2IY4_abUnX2BgPMxA5UxNT/exec";
+
+function getUtmParam(name) {
+  try {
+    return new URLSearchParams(window.location.search).get(name) || "";
+  } catch(e) {
+    return "";
+  }
+}
+
+function getDeviceType() {
+  const w = window.innerWidth || 0;
+  if (w <= 720) return "mobile";
+  if (w <= 1100) return "tablet/notebook";
+  return "desktop";
+}
+
+function calculateLeadTemperature(volume, frequencia, tipo) {
+  const text = [volume, frequencia, tipo].join(" ").toLowerCase();
+  if (
+    text.includes("recorrente") ||
+    text.includes("mensal") ||
+    text.includes("alto volume") ||
+    text.includes("operação intensa") ||
+    text.includes("banco") ||
+    text.includes("órgão público") ||
+    text.includes("corporate") ||
+    text.includes("empresa")
+  ) return "Quente";
+  if (
+    text.includes("volume médio") ||
+    text.includes("turno") ||
+    text.includes("fins de semana") ||
+    text.includes("marketplace") ||
+    text.includes("comércio")
+  ) return "Médio";
+  return "Entrada";
+}
+
+function postToSheets(payload) {
+  try {
+    const body = JSON.stringify(payload);
+    if (navigator.sendBeacon) {
+      const blob = new Blob([body], { type: "text/plain;charset=utf-8" });
+      const ok = navigator.sendBeacon(SHEETS_WEBAPP_URL, blob);
+      if (ok) return Promise.resolve(true);
+    }
+    return fetch(SHEETS_WEBAPP_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body
+    }).then(() => true).catch(() => false);
+  } catch(e) {
+    return Promise.resolve(false);
+  }
+}
+
+function baseTrackingPayload() {
+  return {
+    origem: "site",
+    pagina: window.location.pathname || "/",
+    url_pagina: window.location.href,
+    dispositivo: getDeviceType(),
+    utm_source: getUtmParam("utm_source"),
+    utm_medium: getUtmParam("utm_medium"),
+    utm_campaign: getUtmParam("utm_campaign"),
+    utm_term: getUtmParam("utm_term"),
+    utm_content: getUtmParam("utm_content")
+  };
+}
+
+function setSheetStatus(id, type, message) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.className = "sheetStatus show " + type;
+  el.textContent = message;
+}
+
+function formatWhatsAppClientMessage(data) {
+  return `Olá, vim pelo site da Osasco Express e quero solicitar uma análise da minha operação.\n\n` +
+  `📋 *IDENTIFICAÇÃO*\n` +
+  `Nome: ${data.nome}\n` +
+  `Negócio/Instituição: ${data.nome_negocio}\n` +
+  `WhatsApp: ${data.whatsapp}\n` +
+  `E-mail: ${data.email || "não informado"}\n\n` +
+  `🏢 *OPERAÇÃO*\n` +
+  `Tipo: ${data.tipo_operacao}\n` +
+  `Volume: ${data.volume}\n` +
+  `Período crítico: ${data.periodo_critico}\n` +
+  `Modelo atual: ${data.modelo_atual}\n\n` +
+  `⚠️ *PROBLEMA PRINCIPAL*\n` +
+  `${data.problema}\n` +
+  `${data.observacoes ? "Observações: " + data.observacoes + "\n" : ""}\n` +
+  `📍 *LOCAL*\n` +
+  `Bairro/Cidade: ${data.bairro_cidade}\n` +
+  `Frequência desejada: ${data.frequencia}\n\n` +
+  `Temperatura do cadastro: ${data.temperatura}`;
+}
+
+function formatWhatsAppRiderMessage(data) {
+  return `Olá, vim pelo site da Osasco Express e fiz meu cadastro como entregador parceiro.\n\n` +
+  `🛵 *CADASTRO ENTREGADOR*\n` +
+  `Nome: ${data.nome}\n` +
+  `WhatsApp: ${data.whatsapp}\n` +
+  `E-mail: ${data.email || "não informado"}\n` +
+  `Cidade/Bairro: ${data.bairro_cidade}\n\n` +
+  `Possui moto: ${data.possui_moto}\n` +
+  `Possui CNH: ${data.possui_cnh}\n` +
+  `Possui bag: ${data.possui_bag}\n` +
+  `Dias disponíveis: ${data.dias_disponiveis}\n` +
+  `Horários disponíveis: ${data.horarios_disponiveis}\n` +
+  `Experiência: ${data.experiencia}\n` +
+  `App baixado: ${data.app_baixado}\n` +
+  `Escala acessada: ${data.escala_acessada}\n` +
+  `${data.observacoes ? "\nObservações: " + data.observacoes : ""}`;
+}
+
+/* Sobrescreve a função final do formulário de clientes para salvar no Sheets antes do WhatsApp */
+async function prepareProposal(e) {
+  if(e) e.preventDefault();
+  if(typeof validateStep === "function" && !validateStep(3)) return;
+
+  const v = id => document.getElementById(id)?.value.trim() || "";
+  const checked = id => Array.from(document.querySelectorAll("#"+id+" input:checked")).map(i=>i.value).join(", ");
+
+  const email = v("leadEmail") || "";
+  const tipo = v("leadTipo").includes("Outro") ? v("leadTipoOutro") : v("leadTipo");
+  const problema = v("leadProblema").includes("Outra") ? v("leadProblemaOutro") : v("leadProblema");
+  const picos = checked("leadPicos");
+  const temperatura = calculateLeadTemperature(v("leadVolume"), v("leadFrequencia"), tipo);
+
+  const payload = {
+    ...baseTrackingPayload(),
+    tipo_formulario: "cliente",
+    nome: v("leadNome"),
+    whatsapp: v("leadWhats"),
+    email,
+    tipo_operacao: tipo,
+    nome_negocio: v("leadEmpresa"),
+    volume: v("leadVolume"),
+    periodo_critico: picos,
+    modelo_atual: v("leadModelo"),
+    problema,
+    bairro_cidade: v("leadBairro"),
+    frequencia: v("leadFrequencia"),
+    observacoes: v("leadObs"),
+    temperatura,
+    status: "Novo cadastro"
+  };
+
+  payload.mensagem_whatsapp = formatWhatsAppClientMessage(payload);
+
+  setSheetStatus("clientSheetStatus", "sending", "Salvando sua análise para nossa equipe...");
+  if (typeof oeTrack === "function") oeTrack("submit_cliente_sheets_inicio", {tipo_operacao: tipo, temperatura});
+
+  const saved = await postToSheets(payload);
+
+  setSheetStatus(
+    "clientSheetStatus",
+    saved ? "ok" : "fail",
+    saved
+      ? "Análise registrada. Agora envie também pelo WhatsApp para agilizar o atendimento."
+      : "Não consegui confirmar o registro automático, mas você pode enviar pelo WhatsApp agora."
+  );
+
+  const link = `https://wa.me/5511970334125?text=${encodeURIComponent(payload.mensagem_whatsapp)}`;
+  document.getElementById("proposalWhatsapp").href = link;
+  document.getElementById("proposalSummary").textContent =
+    `Resumo: ${tipo} • ${v("leadVolume")} • ${v("leadBairro")} • ${v("leadFrequencia")} • ${temperatura}.`;
+  document.getElementById("proposalForm").style.display = "none";
+  document.getElementById("proposalNext").classList.add("show");
+
+  if (typeof oeTrack === "function") oeTrack("submit_cliente_sheets", {tipo_operacao: tipo, temperatura, saved});
+}
+
+function openRiderModal() {
+  document.getElementById("riderModal")?.classList.add("open");
+  if (typeof oeTrack === "function") oeTrack("open_entregador_modal", {});
+}
+
+function closeRiderModal() {
+  document.getElementById("riderModal")?.classList.remove("open");
+}
+
+function riderChecked(name) {
+  return Array.from(document.querySelectorAll(`[name="${name}"]:checked`)).map(i=>i.value).join(", ");
+}
+
+function validateRiderForm() {
+  const required = ["riderNome","riderWhats","riderBairro","riderMoto","riderCnh","riderBag","riderExperiencia"];
+  let ok = true;
+  required.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el || !el.value.trim()) ok = false;
+  });
+  if (!riderChecked("riderDias")) ok = false;
+  if (!riderChecked("riderHorarios")) ok = false;
+  return ok;
+}
+
+async function submitRiderForm(e) {
+  if(e) e.preventDefault();
+  const status = "riderSheetStatus";
+  if (!validateRiderForm()) {
+    setSheetStatus(status, "fail", "Preencha os campos obrigatórios para enviar seu cadastro.");
+    return;
+  }
+
+  const v = id => document.getElementById(id)?.value.trim() || "";
+
+  const payload = {
+    ...baseTrackingPayload(),
+    tipo_formulario: "entregador",
+    nome: v("riderNome"),
+    whatsapp: v("riderWhats"),
+    email: v("riderEmail"),
+    bairro_cidade: v("riderBairro"),
+    possui_moto: v("riderMoto"),
+    possui_cnh: v("riderCnh"),
+    possui_bag: v("riderBag"),
+    dias_disponiveis: riderChecked("riderDias"),
+    horarios_disponiveis: riderChecked("riderHorarios"),
+    experiencia: v("riderExperiencia"),
+    app_baixado: v("riderApp"),
+    escala_acessada: v("riderEscala"),
+    observacoes: v("riderObs"),
+    status: "Novo cadastro"
+  };
+
+  setSheetStatus(status, "sending", "Salvando seu cadastro...");
+  if (typeof oeTrack === "function") oeTrack("submit_entregador_sheets_inicio", {});
+
+  const saved = await postToSheets(payload);
+  setSheetStatus(
+    status,
+    saved ? "ok" : "fail",
+    saved
+      ? "Cadastro registrado. Agora envie também pelo WhatsApp para agilizar a triagem."
+      : "Não consegui confirmar o registro automático, mas você pode enviar pelo WhatsApp agora."
+  );
+
+  const msg = formatWhatsAppRiderMessage(payload);
+  const link = `https://wa.me/5511924782555?text=${encodeURIComponent(msg)}`;
+  const button = document.getElementById("riderWhatsapp");
+  if (button) {
+    button.href = link;
+    button.style.display = "inline-flex";
+  }
+
+  if (typeof oeTrack === "function") oeTrack("submit_entregador_sheets", {saved});
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const rw = document.getElementById("riderWhats");
+  if (rw && typeof maskPhone === "function") {
+    rw.addEventListener("input", e => e.target.value = maskPhone(e.target.value));
+  }
+});
+
 </script>
+
+<div class="modal" id="riderModal" aria-hidden="true">
+  <div class="modalBox">
+    <div class="modalHead">
+      <h3>Cadastro de entregador parceiro</h3>
+      <button class="closeBtn" onclick="closeRiderModal()" type="button">Fechar</button>
+    </div>
+    <div class="modalBody">
+      <div class="softBox">
+        <strong>Quer fazer parte da operação?</strong>
+        <p class="micro">Preencha seu cadastro com atenção. A Osasco Express prioriza entregadores responsáveis, que confirmam horário e cumprem o combinado.</p>
+      </div>
+      <form class="form riderFormGrid" id="riderForm" onsubmit="submitRiderForm(event)" novalidate>
+        <div class="fieldGroup">
+          <label for="riderNome">Nome completo *</label>
+          <input id="riderNome" type="text" placeholder="Seu nome completo" required>
+        </div>
+        <div class="fieldGroup">
+          <label for="riderWhats">WhatsApp *</label>
+          <input id="riderWhats" type="tel" inputmode="numeric" placeholder="(11) 99999-9999" required>
+        </div>
+        <div class="fieldGroup">
+          <label for="riderEmail">E-mail</label>
+          <input id="riderEmail" type="email" placeholder="seuemail@exemplo.com">
+        </div>
+        <div class="fieldGroup">
+          <label for="riderBairro">Cidade/Bairro *</label>
+          <input id="riderBairro" type="text" placeholder="Ex: Osasco, Quitaúna" required>
+        </div>
+        <div class="fieldGroup">
+          <label for="riderMoto">Possui moto? *</label>
+          <select id="riderMoto" required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="fieldGroup">
+          <label for="riderCnh">Possui CNH válida? *</label>
+          <select id="riderCnh" required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="fieldGroup">
+          <label for="riderBag">Possui bag/baú? *</label>
+          <select id="riderBag" required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="fieldGroup">
+          <label>Dias disponíveis *</label>
+          <div class="riderChecks">
+            <label class="checkOption"><input type="checkbox" name="riderDias" value="Segunda"><span>Segunda</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderDias" value="Terça"><span>Terça</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderDias" value="Quarta"><span>Quarta</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderDias" value="Quinta"><span>Quinta</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderDias" value="Sexta"><span>Sexta</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderDias" value="Sábado"><span>Sábado</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderDias" value="Domingo/Feriado"><span>Domingo/Feriado</span></label>
+          </div>
+        </div>
+        <div class="fieldGroup">
+          <label>Horários disponíveis *</label>
+          <div class="riderChecks">
+            <label class="checkOption"><input type="checkbox" name="riderHorarios" value="Almoço"><span>Almoço</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderHorarios" value="Tarde"><span>Tarde</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderHorarios" value="Noite"><span>Noite</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderHorarios" value="Madrugada"><span>Madrugada</span></label>
+            <label class="checkOption"><input type="checkbox" name="riderHorarios" value="Integral"><span>Integral</span></label>
+          </div>
+        </div>
+        <div class="fieldGroup">
+          <label for="riderExperiencia">Experiência *</label>
+          <select id="riderExperiencia" required>
+            <option value="">Selecione</option>
+            <option>Já trabalho com delivery</option>
+            <option>Já trabalhei com entregas</option>
+            <option>Tenho pouca experiência</option>
+            <option>Estou começando</option>
+          </select>
+        </div>
+        <div class="fieldGroup">
+          <label for="riderApp">Já baixou o app?</label>
+          <select id="riderApp">
+            <option>Não informado</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="fieldGroup">
+          <label for="riderEscala">Já acessou a escala digital?</label>
+          <select id="riderEscala">
+            <option>Não informado</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+        <div class="fieldGroup">
+          <label for="riderObs">Observações</label>
+          <textarea id="riderObs" placeholder="Conte sua disponibilidade, região ou experiência..."></textarea>
+        </div>
+        <div id="riderSheetStatus" class="sheetStatus"></div>
+        <button class="btn btnPrimary" type="submit">Salvar cadastro</button>
+        <a class="btn btnGhost" id="riderWhatsapp" href="#" target="_blank" rel="noopener" style="display:none">Enviar pelo WhatsApp</a>
+      </form>
+    </div>
+  </div>
+</div>
+
 </body></html>

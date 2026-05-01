@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Área Comercial | Osasco Express</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="logoMark">OE</span> Área Comercial</a>
+    <div class="links"><a href="index.html">Site público</a><a class="navCta" target="_blank" rel="noopener" href="https://wa.me/5511970334125">Comercial</a></div>
+  </div>
+</nav>
+
+<header class="pageTop">
+  <div class="wrap">
+    <span class="eyebrow">Manual interno</span>
+    <h1>Área restrita comercial</h1>
+    <p class="lead">Apoio de venda, produtos, briefing, scripts e regras internas. Não é CRM. O CRM e follow-up ficam fora do site.</p>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap">
+    <div class="loginBox" id="loginBox">
+      <h2>Entrar</h2>
+      <p class="sub">Use usuário <b>admin</b> e senha <b>2026</b>.</p>
+      <input id="adminUser" placeholder="Usuário">
+      <input id="adminPass" type="password" placeholder="Senha">
+      <button class="btn btnPrimary" onclick="doLogin()">Acessar área comercial</button>
+      <p id="loginError" style="color:#c00;font-size:13px;margin-top:10px"></p>
+    </div>
+
+    <div class="adminContent" id="adminContent">
+      <div class="adminShell">
+        <aside class="adminSide">
+          <button class="active" onclick="showPanel(event,'dash')">Dashboard</button>
+          <button onclick="showPanel(event,'produtos')">Produtos</button>
+          <button onclick="showPanel(event,'briefings')">Briefings</button>
+          <button onclick="showPanel(event,'scripts')">Scripts</button>
+          <button onclick="showPanel(event,'objecoes')">Objeções</button>
+          <button onclick="showPanel(event,'tabelas')">Tabelas internas</button>
+          <button onclick="showPanel(event,'riders')">Entregadores</button>
+          <button onclick="showPanel(event,'links')">Links rápidos</button>
+          <button onclick="logout()">Sair</button>
+        </aside>
+
+        <section class="adminContent open">
+          <div id="dash" class="adminPanel active">
+            <h2>Dashboard comercial</h2>
+            <p class="sub">O site capta e qualifica. O comercial fecha. O CRM faz follow-up.</p>
+            <div class="kpiGrid">
+              <div class="kpi"><b>1</b><span>WhatsApp comercial oficial</span></div>
+              <div class="kpi"><b>5</b><span>verticais públicas de serviço</span></div>
+              <div class="kpi"><b>0</b><span>preço público para delivery</span></div>
+              <div class="kpi"><b>3</b><span>links do entregador: ficha, app, escala</span></div>
+            </div>
+            <div class="callout"><b>Regra central:</b> não passar preço antes de entender bairro, volume, frequência, urgência, tipo de entrega e risco operacional.</div>
+          </div>
+
+          <div id="produtos" class="adminPanel">
+            <h2>Produtos do site</h2>
+            <table class="table"><tr><th>Produto</th><th>Público</th><th>Venda pública</th></tr>
+            <tr><td>OE Delivery</td><td>Restaurantes e delivery</td><td>Menos caos no pico, mais operação.</td></tr>
+            <tr><td>OE Marketplace</td><td>Shopee, Mercado Livre, sellers</td><td>Você vende online; a gente ajuda a estruturar entrega local.</td></tr>
+            <tr><td>OE Comércio Local</td><td>Lojas e comércios</td><td>Entrega profissional sem contratar motoboy fixo.</td></tr>
+            <tr><td>OE Empresarial</td><td>Contabilidades, advogados, escritórios</td><td>Documentos, contratos e rotas com responsabilidade.</td></tr>
+            <tr><td>OE Corporate</td><td>Alto ticket</td><td>SLA, contrato, nota fiscal e operação sob análise.</td></tr>
+            </table>
+          </div>
+
+          <div id="briefings" class="adminPanel">
+            <h2>Briefings por nicho</h2>
+            <h3>Delivery</h3><ul><li>Bairro e raio de entrega</li><li>Pedidos por dia</li><li>Horários de pico</li><li>Dias fortes</li><li>Problema atual: falta, atraso, custo, raio ou gestão</li></ul>
+            <h3>Marketplace</h3><ul><li>Canal de venda</li><li>Pacotes por dia/semana</li><li>Coleta, entrega local ou rota</li><li>Horário limite de despacho</li><li>Necessidade de comprovante</li></ul>
+            <h3>Empresarial</h3><ul><li>Tipo de item</li><li>Urgência</li><li>Comprovante</li><li>Recorrência</li><li>Risco e responsabilidade</li></ul>
+          </div>
+
+          <div id="scripts" class="adminPanel">
+            <h2>Scripts rápidos</h2>
+            <div class="callout"><b>Primeira resposta:</b> “Perfeito. Antes de falar em valores, preciso entender bairro, volume, frequência e tipo de entrega para indicar o modelo certo.”</div>
+            <div class="callout"><b>Delivery:</b> “No delivery, preço sem entender pico e raio costuma virar proposta errada. Vamos mapear sua operação primeiro.”</div>
+            <div class="callout"><b>Marketplace:</b> “Se você vende online, podemos avaliar coleta, rota e entrega local para reduzir improviso sem montar frota própria.”</div>
+            <div class="callout"><b>Corporate:</b> “Quando envolve prazo, documento e responsabilidade, a proposta precisa considerar SLA, comprovante e recorrência.”</div>
+          </div>
+
+          <div id="objecoes" class="adminPanel">
+            <h2>Objeções</h2>
+            <table class="table"><tr><th>Objeção</th><th>Resposta</th></tr>
+            <tr><td>Me passa preço.</td><td>Consigo te passar com segurança depois de entender bairro, volume, frequência e horário. Assim evitamos um número errado.</td></tr>
+            <tr><td>Já tenho motoboy.</td><td>Ótimo. A Osasco Express pode atuar como apoio, cobertura, pico ou plano B para não deixar a operação na mão.</td></tr>
+            <tr><td>Uso aplicativo.</td><td>App resolve corrida. Operação recorrente exige previsibilidade, suporte e relação de confiança.</td></tr>
+            <tr><td>Uso pouco.</td><td>Então talvez faça sentido pré-pago ou sob demanda, sem montar estrutura fixa.</td></tr>
+            </table>
+          </div>
+
+          <div id="tabelas" class="adminPanel">
+            <h2>Tabelas internas</h2>
+            <p class="sub">Espaço reservado para inserir as tabelas validadas da operação. Não publicar no site público.</p>
+            <table class="table"><tr><th>Categoria</th><th>Quando usar</th><th>Observação</th></tr>
+            <tr><td>Pré-pago</td><td>Cliente novo ou uso eventual</td><td>Crédito antes de operar.</td></tr>
+            <tr><td>Assinatura</td><td>Uso baixo/médio com recorrência</td><td>Mensalidade compra prioridade e estrutura.</td></tr>
+            <tr><td>Turno</td><td>Pico definido</td><td>Diária + taxas combinadas.</td></tr>
+            <tr><td>Corporate</td><td>Alto ticket/risco</td><td>Sob diagnóstico e contrato.</td></tr>
+            </table>
+          </div>
+
+          <div id="riders" class="adminPanel">
+            <h2>Entregadores — filtro psicológico</h2>
+            <p class="sub">Atrair parceiro forte e afastar quem não tem compromisso.</p>
+            <table class="table"><tr><th>Perfil</th><th>Sinal</th><th>Ação</th></tr>
+            <tr><td>Parceiro forte</td><td>Confirma, cumpre, avisa cedo</td><td>Priorizar oportunidades.</td></tr>
+            <tr><td>Instável</td><td>Some, atrasa, não comunica</td><td>Reduzir prioridade ou bloquear.</td></tr>
+            <tr><td>Novo parceiro</td><td>Quer oportunidade</td><td>Ficha + app + escala + orientação.</td></tr>
+            </table>
+            <div class="callout">Frase-chave: “Aqui a gente faz dinheiro junto. Confirmou horário, cumpre. Se não puder ir, avisa e reabre a vaga.”</div>
+          </div>
+
+          <div id="links" class="adminPanel">
+            <h2>Links rápidos</h2>
+            <ul>
+              <li><a target="_blank" href="https://wa.me/5511970334125">Comercial — (11) 97033-4125</a></li>
+              <li><a target="_blank" href="https://wa.me/5511986661784">SAC especializado — (11) 98666-1784</a></li>
+              <li><a target="_blank" href="https://forms.gle/DSxcYPEf5qFSbHjU8">Ficha cadastral</a></li>
+              <li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.osascoexpress&pcampaignid=web_share">App Android</a></li>
+              <li><a target="_blank" href="https://osascoexpressoficial-debug.github.io/confirmadosdasemana/">Escala digital</a></li>
+              <li><a target="_blank" href="https://www.instagram.com/osascoexpressmotoboys/">Instagram @osascoexpressmotoboys</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="assets/js/comercial.js"></script>
+</body>
+</html>

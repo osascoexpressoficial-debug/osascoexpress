@@ -1,13 +1,22 @@
-OSASCO EXPRESS — SITE V2 SÊNIOR
+OSASCO EXPRESS — V4 LAPIDAÇÃO SÊNIOR
 
-Suba estes arquivos diretamente na raiz do repositório:
+Base preservada. Não reconstruído do zero.
+
+Direção desta versão:
+- Posicionamento premium: inteligência operacional para delivery.
+- Foco principal: restaurantes, pizzarias, hamburguerias, pastelarias e food service com demanda constante.
+- Outros serviços mantidos com rigor: marketplace, comércio local, empresas e entregadores.
+- Modal transformado em diagnóstico operacional.
+- CTAs mais consultivos.
+- Mapa e pinos com função comercial.
+- Área comercial reforçada para vender operação, não corrida.
+
+Arquivos para subir na raiz:
 - index.html
 - comercial.html
 - robots.txt
 - sitemap.xml
 - README.txt
-
-Versão HTML único: CSS e JS embutidos para evitar erro no GitHub Pages.
 
 Área comercial:
 URL: /comercial.html

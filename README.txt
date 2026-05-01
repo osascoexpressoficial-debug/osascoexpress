@@ -1,24 +1,24 @@
-OSASCO EXPRESS — V4 LAPIDAÇÃO SÊNIOR
+OSASCO EXPRESS — V5 SEGURO
 
-Base preservada. Não reconstruído do zero.
+Base: V4 preservada. Esta versão aplica o prompt V5 sem apagar o trabalho anterior.
 
-Direção desta versão:
-- Posicionamento premium: inteligência operacional para delivery.
-- Foco principal: restaurantes, pizzarias, hamburguerias, pastelarias e food service com demanda constante.
-- Outros serviços mantidos com rigor: marketplace, comércio local, empresas e entregadores.
-- Modal transformado em diagnóstico operacional.
-- CTAs mais consultivos.
-- Mapa e pinos com função comercial.
-- Área comercial reforçada para vender operação, não corrida.
+Melhorias aplicadas:
+- Elfsight Google Reviews inserido após serviços.
+- Hero mais claro para restaurantes.
+- Seção de diferenciais comparativos no lugar de AIDA.
+- Formulário multi-step com validação, máscara de WhatsApp, e-mail opcional e checkboxes estilizados.
+- Toast de saída mais específico.
+- Bottom bar mobile ajustada.
+- SEO/OG/geo/schema atualizados.
+- Entregadores reposicionado para não competir com o público principal.
 
-Arquivos para subir na raiz:
-- index.html
-- comercial.html
-- robots.txt
-- sitemap.xml
-- README.txt
+Suba na raiz:
+index.html
+comercial.html
+robots.txt
+sitemap.xml
+README.txt
 
 Área comercial:
-URL: /comercial.html
-Usuário: admin
-Senha: 2026
+comercial.html
+admin / 2026

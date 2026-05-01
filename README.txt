@@ -1,14 +1,15 @@
-OSASCO EXPRESS — SITE PREMIUM
+OSASCO EXPRESS — SITE V2 SÊNIOR
 
-Arquivos para subir na raiz do repositório:
+Suba estes arquivos diretamente na raiz do repositório:
 - index.html
 - comercial.html
 - robots.txt
 - sitemap.xml
 - README.txt
 
-Esta versão é HTML único (CSS e JS embutidos) para evitar erros no GitHub Pages.
-Área Comercial:
-- URL: /comercial.html
-- Usuário: admin
-- Senha: 2026
+Versão HTML único: CSS e JS embutidos para evitar erro no GitHub Pages.
+
+Área comercial:
+URL: /comercial.html
+Usuário: admin
+Senha: 2026
